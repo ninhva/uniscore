@@ -1,0 +1,218 @@
+body {
+  background-color: #141921;
+}
+
+.main-title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+  padding: 50px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.highlight-score-container {
+  background-color: #151B33;
+  border: 2px solid #1C2742;
+  border-radius: 10px;
+  padding: 50px 70px;
+  max-width: 50%;
+  margin: 50px auto;
+}
+
+.timeline-content {
+  display: flex;
+}
+.timeline-content .team-content {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.timeline-content .chart-content {
+  padding: 20px 0;
+  width: 100%;
+  height: 125px;
+}
+
+.time-bar-wrap {
+  padding-left: 55px;
+}
+
+.timebar-container {
+  position: relative;
+  height: 50px;
+  margin: 50px 10px 10px;
+}
+
+.timebar-background {
+  background-color: #004FFF;
+  border-radius: 5px;
+  width: 100%;
+  height: 4px;
+  position: relative;
+}
+
+.timebar-progress {
+  background-color: #48FF5A;
+  border-radius: 5px;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 1s linear;
+}
+
+.timebar-current-time {
+  color: #48FF5A;
+  font-size: 9px;
+  position: absolute;
+  top: -25px;
+  transform: translateX(-50%);
+  transition: all .3s ease;
+}
+
+.timebar-marker {
+  color: #d9d9d9;
+  font-size: 9px;
+  position: absolute;
+  top: -5px; /* Adjusted to center the icon vertically within the bar */
+  text-align: center;
+}
+
+.timebar-marker-icon {
+  width: 8px;
+  height: 8px;
+  background-color: #004FFF;
+  border-radius: 50%;
+  border: 3px solid #0033CC;
+  margin: 0 auto 7px;
+}
+.timebar-marker.active {
+  color: #48FF5A;
+}
+.timebar-marker.active .timebar-marker-icon {
+  border-color: #48FF5A;
+}
+
+.timebar-marker-left {
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.timebar-marker-middle {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timebar-marker-right {
+  right: 0;
+  transform: translateX(50%);
+}
+
+.match-note-content {
+  padding-top: 20px;
+}
+.note-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.note-list li {
+  display: flex;
+  align-items: center;
+}
+
+.note-list li .text {
+  color: #fff;
+  font-size: 11px;
+  padding-left: 10px;
+}
+
+.chart-tooltip-content {
+  background-color: rgba(0,0,0,.6);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.chart-tooltip-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.chart-tooltip-content .chart-inner {
+  padding: 5px 0 5px 10px;
+}
+
+.chart-tooltip-content .title {
+  color: #fff;
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.chart-tooltip-content .player-name {
+  color: #fff;
+  display: block;
+  font-size: 10px;
+}
+
+.chart-tooltip-content .time {
+  background-color: #11a320;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 4px;
+  padding-left: 5px;
+  margin-left: 10px;
+  min-width: 18px;
+  height: 18px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .highlight-score-container {
+    padding: 20px;
+    max-width: 100%
+  }
+}
+
+@media (max-width: 600px) {
+  .highlight-score-container {
+    padding: 10px;
+    max-width: 100%
+  }
+  .timeline-content .team-content {
+    margin-right: 5px;
+    padding-bottom: 20px;
+  }
+  .timeline-content .team-content img {
+    width: 20px;
+    height: 20px;
+  }
+  .timeline-content .chart-content {
+    height: 100px;
+  }
+  .timebar-container {
+    margin-top: 10px;
+  }
+  .time-bar-wrap {
+    padding-left: 25px;
+  }
+  .match-note-content {
+    padding-top: 0;
+  }
+}

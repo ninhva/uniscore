@@ -1,0 +1,56 @@
+.timebar-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+.timebar-background {
+  width: 100%;
+  height: 5px;
+  background-color: blue;
+  position: relative;
+}
+
+.timebar-progress {
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 1s linear;
+}
+
+.timebar-current-time {
+  position: absolute;
+  top: -10px;
+  transform: translateX(-50%);
+  color: black;
+}
+
+.timebar-marker {
+  position: absolute;
+  top: 10px;
+  text-align: center;
+}
+
+.timebar-marker-icon {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+.timebar-marker-left {
+  left: 0;
+}
+
+.timebar-marker-middle {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timebar-marker-right {
+  right: 0;
+}
